@@ -13,3 +13,29 @@
 
 
 /* Validation Styles */
+/* The input, select, and textarea elements were selected and focused on to have a background color of rgb 245,245,140 which would make it a light yellow. */
+input:focus,
+select:focus,
+textarea:focus {
+    background-color: rgb(245, 245, 140);
+}
+
+/* The input elements with id's of fnBox, lnBox, addBox, mailBox, phoneBox, and idBox were selected to be valid and to be focused on. Also, the id's were meant to have a rgb of 220, 255, 220 with a url to place the cg_valid.png, which is a image of a checkmark, to show when valid and was set to be at the bottom right corner of the boc and to be contained in that spot and not be moved. */
+input#fnBox:focus:valid,
+input#lnBox:focus:valid,
+input#addBox:focus:valid,
+input#mailBox:focus:valid,
+input#phoneBox:focus:valid,
+input#idBox:focus:valid {
+    background: rgb(220, 255, 220) url(cg_valid.png) bottom right/contain no-repeat;
+}
+
+/* The input elements with id's of fnBox, lnBox, addBox, mailBox, phoneBox, and idBox were selected to be invalid and to be focused on. Also, the id's were meant to have a rgb of 255, 232, 232 with a url to place the cg_invalid.png, which is a image of a x mark, to show it was invalid and was set to be at the bottom right corner of the box and to be contained in that spot and not be moved. */
+input#fnBox:focus:invalid,
+input#lnBox:focus:invalid,
+input#addBox:focus:invalid,
+input#mailBox:focus:invalid,
+input#phoneBox:focus:invalid,
+input#idBox:focus:invalid {
+    background: rgb(255, 232, 232) url(cg_invalid.png) bottom right/contain no-repeat;
+}
